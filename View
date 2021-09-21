@@ -1,0 +1,41 @@
+<?php
+
+
+ public function aumentoSalarial($aumento)
+     {
+         echo 'Totalizando em: '. $this -> salario + $aumento;
+     }
+
+     public function apresenta()
+     {
+         echo 'Nome: '. $this -> nome;
+         echo "<br>";
+         echo 'Sobrenome: '. $this -> sobrenome;
+         echo "<br>";
+         echo 'Cargo: '. $this -> cargo;
+         echo "<br>";
+         echo 'Salário: '. $this -> salario;
+         echo "<br>";
+         echo 'Telefone: '. $this -> telefone;
+         echo "<br>";
+         echo 'RG: '. $this -> RG;
+         echo 'CPF: '. $this -> CPF;
+     }
+
+     public function aumento($fala)
+     {
+         echo $fala;
+         echo "<br>";
+     }
+
+     public function setEmail($email)
+     {
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo("$email");
+        }
+     }
+
+ };
+
+
+?>
